@@ -16,12 +16,13 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
+let name = 'Latifa'
 function helloName( name ) {
   console.log('in helloName', name);
   return name;
 }
 // Remember to call the function to test
-console.log('running helloName with Latifa', helloName('Latifa'));
+console.log('running helloName with Latifa', helloName(name));
 
 // 3. Function to add two numbers together & return the result
 
@@ -39,10 +40,10 @@ function multiplyThree( ){
 }
 function multiplyThree(num1, num2, num3){
   console.log('in multiplyThree:', num1, num2, num3);
-  answer = num1 * num1 * num3;
+  answer = num1 * num2 * num3;
   return answer
 }
-console.log('running multiplyThree with multiplying 3 three times:', multiplyThree(3,3,3));
+console.log('running multiplyThree with multiplying three numbers:', multiplyThree(4,3,3));
 
 
 // 5. Function that will return true if a number is positive, 
